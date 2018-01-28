@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LMGeocoderUniversal_Example' do
+  pod 'LMGeocoderUniversal', :path => '../'
+
+  target 'LMGeocoderUniversal_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -9,6 +9,14 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+```ObjC
+    LMGeocoder * geocoder = [LMGeocoder geocoder];
+    NSArray * result = [geocoder geocodeAddressString: @"Minsk. Belarus"
+                                              service: kLMGeocoderGoogleService
+                                                error: nil];
+    NSLog(@"%@", [(LMAddress *)result.firstObject country]);
+```
+
 ## Requirements
 
 ## Installation

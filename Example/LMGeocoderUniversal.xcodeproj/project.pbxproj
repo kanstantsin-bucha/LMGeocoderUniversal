@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1242D375201DEE150086E344 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1242D374201DEE150086E344 /* AppDelegate.m */; };
+		1242D378201DEE150086E344 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1242D377201DEE150086E344 /* ViewController.m */; };
+		1242D37A201DEE150086E344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1242D379201DEE150086E344 /* Assets.xcassets */; };
+		1242D37D201DEE150086E344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1242D37B201DEE150086E344 /* Main.storyboard */; };
+		1242D380201DEE150086E344 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1242D37F201DEE150086E344 /* main.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,6 +27,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BCE9E49F5F212C052DAB601E /* Pods_LMGeocoderUniversalMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681097F62F3DC48A72D915BF /* Pods_LMGeocoderUniversalMac.framework */; };
 		DFD9A7AB5F9260AE9EC2CEBA /* Pods_LMGeocoderUniversal_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB6FDA31B35E5113317B766 /* Pods_LMGeocoderUniversal_Tests.framework */; };
 		FD624336EF48CF8DF7E1E7EB /* Pods_LMGeocoderUniversal_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830CCDB851A197BEB2651B04 /* Pods_LMGeocoderUniversal_Example.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1242D371201DEE150086E344 /* LMGeocoderUniversalMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMGeocoderUniversalMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1242D373201DEE150086E344 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1242D374201DEE150086E344 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1242D376201DEE150086E344 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1242D377201DEE150086E344 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1242D379201DEE150086E344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1242D37C201DEE150086E344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1242D37E201DEE150086E344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1242D37F201DEE150086E344 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1242D381201DEE150086E344 /* LMGeocoderUniversalMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LMGeocoderUniversalMac.entitlements; sourceTree = "<group>"; };
 		4808B76591F4BEF5BB50555A /* Pods-LMGeocoderUniversal_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMGeocoderUniversal_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LMGeocoderUniversal_Example/Pods-LMGeocoderUniversal_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LMGeocoderUniversal_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMGeocoderUniversal_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,19 +73,30 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		681097F62F3DC48A72D915BF /* Pods_LMGeocoderUniversalMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMGeocoderUniversalMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		78CB0BEEC60E2859107AA666 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		78CB0BEEC60E2859107AA666 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7BB6FDA31B35E5113317B766 /* Pods_LMGeocoderUniversal_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMGeocoderUniversal_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		830CCDB851A197BEB2651B04 /* Pods_LMGeocoderUniversal_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMGeocoderUniversal_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9CA78B4B7841C5AE664CDBB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9CA78B4B7841C5AE664CDBB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9E9C07F5BFECF3D74F16E345 /* Pods-LMGeocoderUniversalMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMGeocoderUniversalMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LMGeocoderUniversalMac/Pods-LMGeocoderUniversalMac.debug.xcconfig"; sourceTree = "<group>"; };
 		A8116BC42A2EA027823BE79B /* Pods-LMGeocoderUniversal_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMGeocoderUniversal_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LMGeocoderUniversal_Tests/Pods-LMGeocoderUniversal_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AC20637E11CA33D91075AA88 /* LMGeocoderUniversal.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LMGeocoderUniversal.podspec; path = ../LMGeocoderUniversal.podspec; sourceTree = "<group>"; };
+		AC20637E11CA33D91075AA88 /* LMGeocoderUniversal.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LMGeocoderUniversal.podspec; path = ../LMGeocoderUniversal.podspec; sourceTree = "<group>"; };
 		AF144479ACCEACD6238A2B80 /* Pods-LMGeocoderUniversal_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMGeocoderUniversal_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LMGeocoderUniversal_Tests/Pods-LMGeocoderUniversal_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4EC8554ECA9AC8807819004 /* Pods-LMGeocoderUniversal_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMGeocoderUniversal_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LMGeocoderUniversal_Example/Pods-LMGeocoderUniversal_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E5FC97830DFB2E5A4A4AE097 /* Pods-LMGeocoderUniversalMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMGeocoderUniversalMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-LMGeocoderUniversalMac/Pods-LMGeocoderUniversalMac.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1242D36E201DEE150086E344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE9E49F5F212C052DAB601E /* Pods_LMGeocoderUniversalMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F587195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,12 +122,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1242D372201DEE150086E344 /* LMGeocoderUniversalMac */ = {
+			isa = PBXGroup;
+			children = (
+				1242D373201DEE150086E344 /* AppDelegate.h */,
+				1242D374201DEE150086E344 /* AppDelegate.m */,
+				1242D376201DEE150086E344 /* ViewController.h */,
+				1242D377201DEE150086E344 /* ViewController.m */,
+				1242D379201DEE150086E344 /* Assets.xcassets */,
+				1242D37B201DEE150086E344 /* Main.storyboard */,
+				1242D37E201DEE150086E344 /* Info.plist */,
+				1242D37F201DEE150086E344 /* main.m */,
+				1242D381201DEE150086E344 /* LMGeocoderUniversalMac.entitlements */,
+			);
+			path = LMGeocoderUniversalMac;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for LMGeocoderUniversal */,
 				6003F5B5195388D20070C39A /* Tests */,
+				1242D372201DEE150086E344 /* LMGeocoderUniversalMac */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				6633D286816A485F8E49B2E8 /* Pods */,
@@ -112,6 +156,7 @@
 			children = (
 				6003F58A195388D20070C39A /* LMGeocoderUniversal_Example.app */,
 				6003F5AE195388D20070C39A /* LMGeocoderUniversal_Tests.xctest */,
+				1242D371201DEE150086E344 /* LMGeocoderUniversalMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +170,7 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				830CCDB851A197BEB2651B04 /* Pods_LMGeocoderUniversal_Example.framework */,
 				7BB6FDA31B35E5113317B766 /* Pods_LMGeocoderUniversal_Tests.framework */,
+				681097F62F3DC48A72D915BF /* Pods_LMGeocoderUniversalMac.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,6 +238,8 @@
 				D4EC8554ECA9AC8807819004 /* Pods-LMGeocoderUniversal_Example.release.xcconfig */,
 				AF144479ACCEACD6238A2B80 /* Pods-LMGeocoderUniversal_Tests.debug.xcconfig */,
 				A8116BC42A2EA027823BE79B /* Pods-LMGeocoderUniversal_Tests.release.xcconfig */,
+				9E9C07F5BFECF3D74F16E345 /* Pods-LMGeocoderUniversalMac.debug.xcconfig */,
+				E5FC97830DFB2E5A4A4AE097 /* Pods-LMGeocoderUniversalMac.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -199,6 +247,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1242D370201DEE150086E344 /* LMGeocoderUniversalMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1242D384201DEE150086E344 /* Build configuration list for PBXNativeTarget "LMGeocoderUniversalMac" */;
+			buildPhases = (
+				DDE63BD3C3FB4E45759B9AFD /* [CP] Check Pods Manifest.lock */,
+				1242D36D201DEE150086E344 /* Sources */,
+				1242D36E201DEE150086E344 /* Frameworks */,
+				1242D36F201DEE150086E344 /* Resources */,
+				DD0A45A0CA40002A9FBB7471 /* [CP] Embed Pods Frameworks */,
+				8AF7AD05D03C7231346429FC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LMGeocoderUniversalMac;
+			productName = LMGeocoderUniversalMac;
+			productReference = 1242D371201DEE150086E344 /* LMGeocoderUniversalMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6003F589195388D20070C39A /* LMGeocoderUniversal_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "LMGeocoderUniversal_Example" */;
@@ -250,6 +318,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = truebucha;
 				TargetAttributes = {
+					1242D370201DEE150086E344 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = HUUYEKWPEW;
+						ProvisioningStyle = Automatic;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -270,11 +343,21 @@
 			targets = (
 				6003F589195388D20070C39A /* LMGeocoderUniversal_Example */,
 				6003F5AD195388D20070C39A /* LMGeocoderUniversal_Tests */,
+				1242D370201DEE150086E344 /* LMGeocoderUniversalMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1242D36F201DEE150086E344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1242D37A201DEE150086E344 /* Assets.xcassets in Resources */,
+				1242D37D201DEE150086E344 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F588195388D20070C39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,6 +431,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8AF7AD05D03C7231346429FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LMGeocoderUniversalMac/Pods-LMGeocoderUniversalMac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B0856C3DB71F8130F8D38668 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,7 +468,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LMGeocoderUniversal_Example/Pods-LMGeocoderUniversal_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LMGeocoderUniversal/LMGeocoderUniversal.framework",
+				"${BUILT_PRODUCTS_DIR}/LMGeocoderUniversal-iOS/LMGeocoderUniversal.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -396,9 +494,55 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LMGeocoderUniversal_Example/Pods-LMGeocoderUniversal_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DD0A45A0CA40002A9FBB7471 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LMGeocoderUniversalMac/Pods-LMGeocoderUniversalMac-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LMGeocoderUniversal-macOS/LMGeocoderUniversal.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LMGeocoderUniversal.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LMGeocoderUniversalMac/Pods-LMGeocoderUniversalMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDE63BD3C3FB4E45759B9AFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LMGeocoderUniversalMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1242D36D201DEE150086E344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1242D378201DEE150086E344 /* ViewController.m in Sources */,
+				1242D380201DEE150086E344 /* main.m in Sources */,
+				1242D375201DEE150086E344 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,6 +572,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1242D37B201DEE150086E344 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1242D37C201DEE150086E344 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		6003F596195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -455,6 +607,79 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1242D382201DEE150086E344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E9C07F5BFECF3D74F16E345 /* Pods-LMGeocoderUniversalMac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HUUYEKWPEW;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = LMGeocoderUniversalMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.truebucha.LMGeocoderUniversalMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1242D383201DEE150086E344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5FC97830DFB2E5A4A4AE097 /* Pods-LMGeocoderUniversalMac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HUUYEKWPEW;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = LMGeocoderUniversalMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.truebucha.LMGeocoderUniversalMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -488,7 +713,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -521,7 +747,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -605,6 +832,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1242D384201DEE150086E344 /* Build configuration list for PBXNativeTarget "LMGeocoderUniversalMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1242D382201DEE150086E344 /* Debug */,
+				1242D383201DEE150086E344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "LMGeocoderUniversal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,9 +1,17 @@
 use_frameworks!
 
+
+target 'LMGeocoderUniversalMac' do
+    platform :osx, '10.11'
+    pod 'LMGeocoderUniversal', :path => '../'
+    
+end
+
 target 'LMGeocoderUniversal_Example' do
   pod 'LMGeocoderUniversal', :path => '../'
-
+  platform :ios, '9.0'
   target 'LMGeocoderUniversal_Tests' do
+      
     inherit! :search_paths
 
     

@@ -1,24 +1,20 @@
 //
-//  LMViewController.m
-//  LMGeocoderUniversal
+//  ViewController.m
+//  LMGeocoderUniversalMac
 //
-//  Created by truebucha on 01/28/2018.
-//  Copyright (c) 2018 truebucha. All rights reserved.
+//  Created by Kanstantsin Bucha on 1/28/18.
+//  Copyright © 2018 truebucha. All rights reserved.
 //
 
-#import "LMViewController.h"
+#import "ViewController.h"
 #import <LMGeocoderUniversal/LMGeocoderUniversal.h>
 
-@interface LMViewController ()
-
-@end
-
-@implementation LMViewController
+@implementation ViewController
 
 - (void) viewDidLoad {
     
     [super viewDidLoad];
-	
+
     LMGeocoder * geocoder = [LMGeocoder geocoder];
     NSArray * result = [geocoder geocodeAddressString: @"Minsk. Belarus"
                                               service: kLMGeocoderGoogleService
@@ -26,10 +22,12 @@
     NSLog(@"%@", [(LMAddress *)result.firstObject country]);
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)setRepresentedObject:(id)representedObject {
+    [super setRepresentedObject:representedObject];
+
+    // Update the view, if already loaded.
 }
+
 
 @end

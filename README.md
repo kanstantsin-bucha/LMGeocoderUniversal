@@ -9,6 +9,25 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+add to info.plist
+```
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+    <key>NSExceptionDomains</key>
+    <dict>
+        <key>maps.googleapis.com</key>
+        <dict>
+            <key>NSExceptionAllowsInsecureHTTPLoads</key>
+            <true/>
+            <key>NSIncludesSubdomains</key>
+            <true/>
+        </dict>
+    </dict>
+</dict>
+```
+
 ```ObjC
     LMGeocoder * geocoder = [LMGeocoder geocoder];
     NSArray * result = [geocoder geocodeAddressString: @"Minsk. Belarus"

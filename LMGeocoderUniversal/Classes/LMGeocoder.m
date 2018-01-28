@@ -22,6 +22,14 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
 
 @end
 
+@interface NSURLSession (Synchronous)
+
++ (NSData *) sendSynchronousRequest: (NSURLRequest *) request
+                  returningResponse: (__autoreleasing NSURLResponse **) responsePtr
+                              error: (__autoreleasing NSError **) errorPtr;
+
+@end
+
 @implementation LMGeocoder
 
 @synthesize isGeocoding = _isGeocoding;
@@ -330,7 +338,10 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
     
     NSURLResponse *response = nil;
     NSError *error = nil;
-    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    
+    NSData * data = [NSURLSession sendSynchronousRequest: request
+                                       returningResponse: &response
+                                                   error: &error];
     if (!error && data)
     {
         NSError *parsingError = nil;
@@ -367,6 +378,40 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
     }
     
     return finalResults;
+}
+
+@end
+
+@implementation NSURLSession (Synchronous)
+
+// https://stackoverflow.com/questions/26784315/can-i-somehow-do-a-synchronous-http-request-via-nsurlsession-in-swift
++ (NSData *) sendSynchronousRequest: (NSURLRequest *) request
+                  returningResponse: (__autoreleasing NSURLResponse **) responsePtr
+                              error: (__autoreleasing NSError **) errorPtr {
+    dispatch_semaphore_t    sem;
+    __block NSData *        result;
+    
+    result = nil;
+    
+    sem = dispatch_semaphore_create(0);
+    
+    [[[NSURLSession sharedSession] dataTaskWithRequest:request
+                                     completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (errorPtr != NULL) {
+            *errorPtr = error;
+        }
+        if (responsePtr != NULL) {
+            *responsePtr = response;
+        }
+        if (error == nil) {
+            result = data;
+        }
+        dispatch_semaphore_signal(sem);
+    }] resume];
+    
+    dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+    
+    return result;
 }
 
 @end

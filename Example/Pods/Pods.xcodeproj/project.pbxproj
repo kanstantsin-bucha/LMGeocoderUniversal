@@ -7,116 +7,183 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		009D00521FD093B9763DEDB1588056F2 /* LMGeocoderUniversal-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF221446C16AC4AE17CF21A81F3C1C7 /* LMGeocoderUniversal-iOS-dummy.m */; };
-		021C4FE27EB023D82654FCC78DF2CF5D /* LMAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAE43F1F0D827817EA5B0479680B36 /* LMAddress.m */; };
-		0CF78B5AF13E8BF2878C4EC887D70701 /* Pods-LMGeocoderUniversal_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F82C730B5DA998F87E353DB9CCFB62 /* Pods-LMGeocoderUniversal_Example-dummy.m */; };
-		39FC2497523768F8792752CD960AA679 /* Pods-LMGeocoderUniversalMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4143360F429372C9B137B6626BF904A /* Pods-LMGeocoderUniversalMac-dummy.m */; };
-		3D0B68E0662DF9A322C80BCF7D3401DA /* LMGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AB8B6D27AB2C7FFD66A682F159AD71 /* LMGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		009B53FF27C8222F549D68F1C03FB33A /* CDBKitLocalize.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BC30BD30AB495F5803DE49309BD8000 /* CDBKitLocalize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02B0DB0B7B3A7DCD3D8B31D44AB3D4A3 /* LMAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B4AE8DF075D708E894BC633149B39E /* LMAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A33B1244D2D1B6CEFB69F878D09550B /* LMGeocoderUniversal.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CECCB9EE15190C5D33067CDE532D1C /* LMGeocoderUniversal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C33B4125B60BD198E7BF2086949A187 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7624ADCFA13E189EBFFF83134F54FD57 /* CoreLocation.framework */; };
+		13A695855E694F03728C9FC82DE331B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96CA4096566FEFA68511F09C14A2EFF /* Foundation.framework */; };
+		172F858C6D555E63949C9AE6F1D04790 /* CDBKit-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1584C8249D0CDD38FCC30AD814BFE624 /* CDBKit-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F2F1B5B083AB39D5B07C719E30754F4 /* CDBKit-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A4D4F3C7467B6A1B3FFEE6347FC01B /* CDBKit-macOS-dummy.m */; };
+		25BAC2F0F9116BD2014695F0FA8A2AD4 /* LMGeocoderUniversal.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CECCB9EE15190C5D33067CDE532D1C /* LMGeocoderUniversal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3387EB1E7C2D9393E99B5D42C491754A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7C1948D833B5900976402FC3A3E5AE /* Foundation.framework */; };
+		374AD5DC9F67375AB9B5A8EC63A2DBD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7C1948D833B5900976402FC3A3E5AE /* Foundation.framework */; };
+		384B68A01A16F82318AE194BA7B2D2DF /* CDBKitCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 582DBCDF5514B78F3DEA0EAC4A9A3F77 /* CDBKitCore.m */; };
 		40BA0534F3FF5E3914B61F27E603B989 /* Pods-LMGeocoderUniversal_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E464B6D5A84D2327519CB79B0608493C /* Pods-LMGeocoderUniversal_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F202A92BE6D599947C6D299AD37BEBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8006F2EA269E58F8DF71D5033D2D0468 /* Cocoa.framework */; };
-		5BD2B3BC1B49823AB187AB2FFC16CBAA /* Pods-LMGeocoderUniversalMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C531A0AF2B294839C3916F45934875 /* Pods-LMGeocoderUniversalMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75FFF63F69662D23D7CEAE880A114376 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DFDE70F8890A2EE841E061CD964FCD /* Foundation.framework */; };
-		7AA7E0891DFCFB4919A8DBB3F1E8D0B6 /* LMAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAE43F1F0D827817EA5B0479680B36 /* LMAddress.m */; };
-		7D3FADCB99960C15F16E9C4661DD55FA /* LMGeocoderUniversal-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 650B28991D22A5F6ABBD63FA84BE3A10 /* LMGeocoderUniversal-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		530E30ACD46FB5A40F04C9711A9A6135 /* Pods-LMGeocoderUniversalMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4143360F429372C9B137B6626BF904A /* Pods-LMGeocoderUniversalMac-dummy.m */; };
+		552F22ECF614577B52BF7BFD4074AD8B /* CDBKitLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E0930D0A6B87DA8709BEC7C43A57D5 /* CDBKitLocalize.m */; };
+		57CC459D373466E0946971BDA3FB1192 /* LMGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC143E48502C30580FE41F27F0EA43BA /* LMGeocoder.m */; };
+		5D3344688C57DA3116345460EC587498 /* CDBKitUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 65793F3DA0ADFB7C18A6687106DF6440 /* CDBKitUI.m */; };
+		5E6CC187B3991DAFD0B3FCE4967139FA /* LMGeocoderUniversal-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D7F605784680BB2120B4F8FF1D1B57 /* LMGeocoderUniversal-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		613E99272E71A470CD42E1174ED92AC7 /* CDBKit-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BAB932980B06496FE7435347FC5C9B3 /* CDBKit-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		637D22B0CCFFEF623EA587EC799EA8DE /* LMAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAE43F1F0D827817EA5B0479680B36 /* LMAddress.m */; };
+		71F2B284C10D9D7084771F19C0C6D449 /* CDBKitUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 65793F3DA0ADFB7C18A6687106DF6440 /* CDBKitUI.m */; };
+		725F3F09779A31CD03479312C76EC3CF /* CDBKit-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 243B4F1B9B7D3293493AFA6F7171B099 /* CDBKit-iOS-dummy.m */; };
+		73DBE810786AD2EFD794DD99DEE31015 /* LMGeocoderUniversal-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 650B28991D22A5F6ABBD63FA84BE3A10 /* LMGeocoderUniversal-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7449186E6AF5AFFA2E3D2CE3E30FCE7A /* CDBKitUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3703F1B6B1A4E292104C3C99EFDA95B5 /* CDBKitUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75FFF63F69662D23D7CEAE880A114376 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7C1948D833B5900976402FC3A3E5AE /* Foundation.framework */; };
+		766220CD5DC605FE717E859CD6F5E9B2 /* LMGeocoderUniversal-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9041C887D27C546D54F01A63DB82BA56 /* LMGeocoderUniversal-macOS-dummy.m */; };
+		84B37582C872E63FAA9229132EB98297 /* CDBKitCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 06AAD34EF4EE199782B9FA5F6E00D38E /* CDBKitCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85F99827FC054A56566D16DA1E531567 /* CDBKitCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 06AAD34EF4EE199782B9FA5F6E00D38E /* CDBKitCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8961EE345E87A9DB79107364A6026CEF /* LMGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AB8B6D27AB2C7FFD66A682F159AD71 /* LMGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		919BB3AE850D24461EA89DE0311E8DE9 /* CDBKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE27EDB09DA6067F3452FEE5851B3 /* CDBKit.m */; };
+		92202E57E10B8F80F5603076F22FFAA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83242B46DDCDA01FFFEAC3CF22ACEA28 /* CoreLocation.framework */; };
+		98A70783902AF58680DD7AD86256A526 /* CDBKitUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3703F1B6B1A4E292104C3C99EFDA95B5 /* CDBKitUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99A0FAEC50C09AA066ED9100835C1ADE /* Pods-LMGeocoderUniversal_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7176ED653A88E6A4AD34911AF36E6B /* Pods-LMGeocoderUniversal_Tests-dummy.m */; };
-		9EC1BDADF2F565EB7D2D7A365F72B65A /* LMGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC143E48502C30580FE41F27F0EA43BA /* LMGeocoder.m */; };
-		A4280F5804952ED82A0EB5BDE0B6F925 /* LMGeocoderUniversal.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CECCB9EE15190C5D33067CDE532D1C /* LMGeocoderUniversal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8C037E203F669377E36EE2AB9E9E7CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DFDE70F8890A2EE841E061CD964FCD /* Foundation.framework */; };
-		B4FB6E1263AD88E2F079440F7B74BFAD /* LMAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B4AE8DF075D708E894BC633149B39E /* LMAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8CC57CC11089D61BA60562B7BDC9081 /* LMGeocoderUniversal.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CECCB9EE15190C5D33067CDE532D1C /* LMGeocoderUniversal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1196D80BBF6919C79B53993678E9393 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8006F2EA269E58F8DF71D5033D2D0468 /* Cocoa.framework */; };
-		C1A65677DD8DBB4F3ADA4EE625249938 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669D4B9F6D8CE390EBE080C9E8C2805D /* Foundation.framework */; };
-		C20C8E219065E927ECFE30919C5DDAEC /* Pods-LMGeocoderUniversal_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE345EFE994A0D70268794881ABD0F25 /* Pods-LMGeocoderUniversal_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C682988A0171F78B5E32546A66752C77 /* LMGeocoderUniversal-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9041C887D27C546D54F01A63DB82BA56 /* LMGeocoderUniversal-macOS-dummy.m */; };
-		CCF17C0C26708F0EF96A3805149587C0 /* LMAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B4AE8DF075D708E894BC633149B39E /* LMAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4B800DF8C48ED3BFDE5BBF41EBC18A9 /* LMGeocoderUniversal-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D7F605784680BB2120B4F8FF1D1B57 /* LMGeocoderUniversal-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D52D11684D2E725A346153FF4279C3D3 /* LMGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AB8B6D27AB2C7FFD66A682F159AD71 /* LMGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9D8436C50CD4BD8C4DBB7EBD83FACE6 /* LMGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC143E48502C30580FE41F27F0EA43BA /* LMGeocoder.m */; };
-		DAFEFB0E388DD69D5DD4EE596A5ACB16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DFDE70F8890A2EE841E061CD964FCD /* Foundation.framework */; };
+		A1B64D1BC271F0A91550B9F6C6CF7A07 /* CDBKitLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E0930D0A6B87DA8709BEC7C43A57D5 /* CDBKitLocalize.m */; };
+		A59BA4DB4BD24D8A9660FEABA3A07D0D /* CDBKitLocalize.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BC30BD30AB495F5803DE49309BD8000 /* CDBKitLocalize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD46505AFF3F70C41A682045C7C3ED3B /* CDBKitCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 582DBCDF5514B78F3DEA0EAC4A9A3F77 /* CDBKitCore.m */; };
+		B83F932323C9EE04D6ADE16287042738 /* LMAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B4AE8DF075D708E894BC633149B39E /* LMAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC5B1F2177D52FD2FDBDA7C28D83FD50 /* LMGeocoderUniversal-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF221446C16AC4AE17CF21A81F3C1C7 /* LMGeocoderUniversal-iOS-dummy.m */; };
+		C47DD455C59D33678F744FFCB3ED2DCF /* LMAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAE43F1F0D827817EA5B0479680B36 /* LMAddress.m */; };
+		CD4CF9E5F6C016C95A2AF425ECF5D205 /* LMGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AB8B6D27AB2C7FFD66A682F159AD71 /* LMGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2026D397F13D8C23D7373FAEA47F7AE /* Pods-LMGeocoderUniversal_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE345EFE994A0D70268794881ABD0F25 /* Pods-LMGeocoderUniversal_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D34BDDA807DAB689412CD5A44452F413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7C1948D833B5900976402FC3A3E5AE /* Foundation.framework */; };
+		D3E2999BA8AB3682EABE3883C26B7340 /* CDBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 96385A2B2EEF5DDBE311D8A777AD3A48 /* CDBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D939856A5EF1BF97679EF26F5BAB4539 /* CDBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 96385A2B2EEF5DDBE311D8A777AD3A48 /* CDBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1CBA8B1C33C9122014E5930013070E9 /* LMGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC143E48502C30580FE41F27F0EA43BA /* LMGeocoder.m */; };
+		E2709F2C6BA367168569CC1416C8E520 /* CDBKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE27EDB09DA6067F3452FEE5851B3 /* CDBKit.m */; };
+		E4C405879FD08599DC1B537DE71B4CAB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1069551AC60E53AEAD27B8971A8E67E8 /* AppKit.framework */; };
+		E5D411FFF3098DE964695F7CD39E807A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B62B545428FA1A3DF60254DF32601A /* Cocoa.framework */; };
+		E84AC597742C0AE592DDAF73B01BA2C8 /* Pods-LMGeocoderUniversalMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C531A0AF2B294839C3916F45934875 /* Pods-LMGeocoderUniversalMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F054D10EDDC95C522591138CBEB710B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96CA4096566FEFA68511F09C14A2EFF /* Foundation.framework */; };
+		F80EE6D3CB37F1389EA0CCAE62C8F43B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5B9BDEEFE6D9C437A0F74F029979D2 /* UIKit.framework */; };
+		F8F653B0BE543A8C60D4751E3E2343A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B62B545428FA1A3DF60254DF32601A /* Cocoa.framework */; };
+		FC9B9B5EBFD77092AD927F78443B8FC9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B62B545428FA1A3DF60254DF32601A /* Cocoa.framework */; };
+		FF5840FC67C606BD98B5AAF131336066 /* Pods-LMGeocoderUniversal_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F82C730B5DA998F87E353DB9CCFB62 /* Pods-LMGeocoderUniversal_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		22B58A878BC3047B9ABACC24A0C6C8B6 /* PBXContainerItemProxy */ = {
+		1979C42EB33355157708DED42F9940DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A2ECD5283E3A77FF46726A01CC40DB3B;
+			remoteGlobalIDString = 6BADF8169222327767EB05AB0A7173B2;
+			remoteInfo = "CDBKit-macOS";
+		};
+		21DE6D798D8FCEACBD1EBE2EBCDB29A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 423679F3AE3806D60B09DCAFC0A74A4C;
+			remoteInfo = "CDBKit-iOS";
+		};
+		2ADFFF6F00355838FF04C15E62EC84CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B0EFFDB219F74C357946C8026BFBB87;
 			remoteInfo = "LMGeocoderUniversal-iOS";
 		};
-		BF4FD1E7CFE38F6D1CE8A4DD09D1C6B6 /* PBXContainerItemProxy */ = {
+		6FC6DD6CEA39C847613877D05DA9135A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A162D513D3DEC9FE74CCAC7ABFDBBD3;
+			remoteGlobalIDString = 518046116E95908499B6BCC6018EFDE2;
 			remoteInfo = "LMGeocoderUniversal-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		013662EF0DB7BE986036871CD092E9F9 /* Pods-LMGeocoderUniversal_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LMGeocoderUniversal_Tests.modulemap"; sourceTree = "<group>"; };
-		095827E92A8CBCC46DF7E405B795FF12 /* LMGeocoderUniversal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LMGeocoderUniversal.framework; path = "LMGeocoderUniversal-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		024F9B772CB809E154766B136B9CBC6D /* CDBKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CDBKit.framework; path = "CDBKit-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06AAD34EF4EE199782B9FA5F6E00D38E /* CDBKitCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDBKitCore.h; path = Pod/Classes/Core/CDBKitCore.h; sourceTree = "<group>"; };
 		0B065B09E19CD99906437EFD4B00E7B3 /* Pods-LMGeocoderUniversalMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LMGeocoderUniversalMac.debug.xcconfig"; sourceTree = "<group>"; };
-		0D6C7B1BC25373AD6C874DBD14DFB429 /* LMGeocoderUniversal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LMGeocoderUniversal.framework; path = "LMGeocoderUniversal-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BC30BD30AB495F5803DE49309BD8000 /* CDBKitLocalize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDBKitLocalize.h; path = Pod/Classes/Localize/CDBKitLocalize.h; sourceTree = "<group>"; };
 		105E5268611DD0B39B397F73D939183D /* Pods-LMGeocoderUniversal_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LMGeocoderUniversal_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1069551AC60E53AEAD27B8971A8E67E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
 		10CECCB9EE15190C5D33067CDE532D1C /* LMGeocoderUniversal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMGeocoderUniversal.h; path = LMGeocoderUniversal/Classes/LMGeocoderUniversal.h; sourceTree = "<group>"; };
 		11230E3CFF7D1ABCE5EE8264F0530258 /* LMGeocoderUniversal-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LMGeocoderUniversal-macOS-prefix.pch"; path = "../LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS-prefix.pch"; sourceTree = "<group>"; };
+		1584C8249D0CDD38FCC30AD814BFE624 /* CDBKit-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CDBKit-macOS-umbrella.h"; path = "../CDBKit-macOS/CDBKit-macOS-umbrella.h"; sourceTree = "<group>"; };
 		16C2316285A63CC568C805109477E0A3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18CEC8341CB9A3E2B9287D2DBCDCACF3 /* Pods-LMGeocoderUniversalMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LMGeocoderUniversalMac.release.xcconfig"; sourceTree = "<group>"; };
 		1EE6461F50390A587BE185718AE59F7A /* Pods-LMGeocoderUniversal_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LMGeocoderUniversal_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1FA10EBE5B3E977639FDD5566E3CC45E /* Pods-LMGeocoderUniversal_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LMGeocoderUniversal_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2003DAF0115ECD4B7295A51E8223AD72 /* CDBKit-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "CDBKit-iOS.modulemap"; sourceTree = "<group>"; };
 		20B4AE8DF075D708E894BC633149B39E /* LMAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAddress.h; path = LMGeocoderUniversal/Classes/LMAddress.h; sourceTree = "<group>"; };
 		22660166B3406123A9AD9C2E3F87BFEB /* Pods-LMGeocoderUniversalMac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LMGeocoderUniversalMac-acknowledgements.plist"; sourceTree = "<group>"; };
 		22DE36B4E88D0BE486CD3A41D8BBF7C4 /* Pods-LMGeocoderUniversal_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LMGeocoderUniversal_Example.release.xcconfig"; sourceTree = "<group>"; };
-		33DFDE70F8890A2EE841E061CD964FCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		36F98CA8B392F204CB0EC9E4F0AA6531 /* Pods_LMGeocoderUniversal_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LMGeocoderUniversal_Tests.framework; path = "Pods-LMGeocoderUniversal_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		243B4F1B9B7D3293493AFA6F7171B099 /* CDBKit-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDBKit-iOS-dummy.m"; sourceTree = "<group>"; };
+		30EB03798E6E3B796F6DEEF35BDBBD32 /* LMGeocoderUniversal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LMGeocoderUniversal.framework; path = "LMGeocoderUniversal-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3703F1B6B1A4E292104C3C99EFDA95B5 /* CDBKitUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDBKitUI.h; path = Pod/Classes/UI/CDBKitUI.h; sourceTree = "<group>"; };
 		3A0595154AE6721AC154BB0722B50220 /* LMGeocoderUniversal-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "LMGeocoderUniversal-iOS.modulemap"; sourceTree = "<group>"; };
 		3C06FD0A8C75F3FEA9DF65C082CF848E /* Pods-LMGeocoderUniversalMac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LMGeocoderUniversalMac-frameworks.sh"; sourceTree = "<group>"; };
+		42F3A25089D33F9007326F852BE90765 /* CDBKit-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CDBKit-iOS.xcconfig"; sourceTree = "<group>"; };
 		43C962196AE2A68A04294640E9E52AEF /* Pods-LMGeocoderUniversal_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LMGeocoderUniversal_Example.modulemap"; sourceTree = "<group>"; };
+		47B62B545428FA1A3DF60254DF32601A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		4E1E2F7B128EF5D4AFFBC3AC76023F28 /* Pods-LMGeocoderUniversal_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LMGeocoderUniversal_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4F5B9BDEEFE6D9C437A0F74F029979D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		50BCD007A67E12E50E256138F8AFD5CF /* Pods-LMGeocoderUniversal_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LMGeocoderUniversal_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5226768A6903D48DB8FABBC00CF18A99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54D13B8C25ABC8591B25328C782B1999 /* Pods-LMGeocoderUniversal_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LMGeocoderUniversal_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		582DBCDF5514B78F3DEA0EAC4A9A3F77 /* CDBKitCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDBKitCore.m; path = Pod/Classes/Core/CDBKitCore.m; sourceTree = "<group>"; };
 		59D7F605784680BB2120B4F8FF1D1B57 /* LMGeocoderUniversal-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LMGeocoderUniversal-macOS-umbrella.h"; path = "../LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS-umbrella.h"; sourceTree = "<group>"; };
 		5E0BAEA9B33AC10202D52C08A39719FF /* Pods-LMGeocoderUniversal_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LMGeocoderUniversal_Example-resources.sh"; sourceTree = "<group>"; };
+		626BF78DD4F6D98666C19CB06C71C051 /* CDBKit-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CDBKit-macOS.xcconfig"; path = "../CDBKit-macOS/CDBKit-macOS.xcconfig"; sourceTree = "<group>"; };
 		63EFC4F1FC134FBBE3DFC722F8A9955A /* Pods-LMGeocoderUniversal_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LMGeocoderUniversal_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		64A4D4F3C7467B6A1B3FFEE6347FC01B /* CDBKit-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CDBKit-macOS-dummy.m"; path = "../CDBKit-macOS/CDBKit-macOS-dummy.m"; sourceTree = "<group>"; };
 		650B28991D22A5F6ABBD63FA84BE3A10 /* LMGeocoderUniversal-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMGeocoderUniversal-iOS-umbrella.h"; sourceTree = "<group>"; };
-		669D4B9F6D8CE390EBE080C9E8C2805D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		65793F3DA0ADFB7C18A6687106DF6440 /* CDBKitUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDBKitUI.m; path = Pod/Classes/UI/CDBKitUI.m; sourceTree = "<group>"; };
 		6FD50A18389A9D026FBF566E00BEBBC4 /* Pods-LMGeocoderUniversal_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LMGeocoderUniversal_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		74B0C3FBF61BAAAE6C090851E8D336FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7624ADCFA13E189EBFFF83134F54FD57 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		7F494F87617184ACCF6AE56120FDA94B /* Pods-LMGeocoderUniversal_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LMGeocoderUniversal_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8006F2EA269E58F8DF71D5033D2D0468 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		83242B46DDCDA01FFFEAC3CF22ACEA28 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		8BAB932980B06496FE7435347FC5C9B3 /* CDBKit-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDBKit-iOS-umbrella.h"; sourceTree = "<group>"; };
+		8BBDA2E6E5A4826BE484E485C6DACA30 /* CDBKit-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CDBKit-macOS-prefix.pch"; path = "../CDBKit-macOS/CDBKit-macOS-prefix.pch"; sourceTree = "<group>"; };
 		8BD81475B943125D297A751075AA5A09 /* Pods-LMGeocoderUniversalMac-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LMGeocoderUniversalMac-resources.sh"; sourceTree = "<group>"; };
 		9041C887D27C546D54F01A63DB82BA56 /* LMGeocoderUniversal-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "LMGeocoderUniversal-macOS-dummy.m"; path = "../LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS-dummy.m"; sourceTree = "<group>"; };
+		926D5341409E75DE77DCBABC3CC7136B /* Pods_LMGeocoderUniversal_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LMGeocoderUniversal_Tests.framework; path = "Pods-LMGeocoderUniversal_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A2B330489E30654A3E514D0295E01B /* LMGeocoderUniversal-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LMGeocoderUniversal-iOS.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94A7F5DD84E96C827F5151598A3E74BD /* Pods-LMGeocoderUniversalMac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LMGeocoderUniversalMac-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9C8851A2C1C463D617C3F391B7E29601 /* Pods_LMGeocoderUniversal_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LMGeocoderUniversal_Example.framework; path = "Pods-LMGeocoderUniversal_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96385A2B2EEF5DDBE311D8A777AD3A48 /* CDBKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDBKit.h; path = Pod/Classes/CDBKit.h; sourceTree = "<group>"; };
+		9DC40F95D457DA0A6F64A07B412542C5 /* Pods_LMGeocoderUniversal_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LMGeocoderUniversal_Example.framework; path = "Pods-LMGeocoderUniversal_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A223B9753DD203AAAC8549864CBCE294 /* CDBKit-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "CDBKit-macOS.modulemap"; path = "../CDBKit-macOS/CDBKit-macOS.modulemap"; sourceTree = "<group>"; };
 		A9C531A0AF2B294839C3916F45934875 /* Pods-LMGeocoderUniversalMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LMGeocoderUniversalMac-umbrella.h"; sourceTree = "<group>"; };
 		AC3F401DB4061619451E2A66B878797A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../LMGeocoderUniversal-macOS/Info.plist"; sourceTree = "<group>"; };
+		AC7C1948D833B5900976402FC3A3E5AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AD4DE27EDB09DA6067F3452FEE5851B3 /* CDBKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDBKit.m; path = Pod/Classes/CDBKit.m; sourceTree = "<group>"; };
 		AE345EFE994A0D70268794881ABD0F25 /* Pods-LMGeocoderUniversal_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LMGeocoderUniversal_Example-umbrella.h"; sourceTree = "<group>"; };
+		B276B8B9EB349095BBA66FDD8D20C176 /* Pods_LMGeocoderUniversalMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LMGeocoderUniversalMac.framework; path = "Pods-LMGeocoderUniversalMac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A000CDFD4335AC0C4753367EAE2B5E /* LMGeocoderUniversal-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "LMGeocoderUniversal-macOS.modulemap"; path = "../LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS.modulemap"; sourceTree = "<group>"; };
+		B98BD7C1F4DC2C5A7DE42A3D5D618080 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../CDBKit-macOS/Info.plist"; sourceTree = "<group>"; };
 		BBCAE43F1F0D827817EA5B0479680B36 /* LMAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAddress.m; path = LMGeocoderUniversal/Classes/LMAddress.m; sourceTree = "<group>"; };
+		BC6555E40FFECB006EF80536C32801C8 /* LMGeocoderUniversal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LMGeocoderUniversal.framework; path = "LMGeocoderUniversal-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D30CCC743810581E0F26B33A96902C /* Pods-LMGeocoderUniversalMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LMGeocoderUniversalMac.modulemap"; sourceTree = "<group>"; };
 		C1AB8B6D27AB2C7FFD66A682F159AD71 /* LMGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMGeocoder.h; path = LMGeocoderUniversal/Classes/LMGeocoder.h; sourceTree = "<group>"; };
 		C207D1F6B6687AB069989D6F087C68A6 /* LMGeocoderUniversal-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMGeocoderUniversal-iOS-prefix.pch"; sourceTree = "<group>"; };
 		C4143360F429372C9B137B6626BF904A /* Pods-LMGeocoderUniversalMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LMGeocoderUniversalMac-dummy.m"; sourceTree = "<group>"; };
 		C7ACB222F1AA26B29BAF36B19A674851 /* LMGeocoderUniversal-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "LMGeocoderUniversal-macOS.xcconfig"; path = "../LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS.xcconfig"; sourceTree = "<group>"; };
 		CFF5060EC1CE74C5BA0F864AD40F1EA4 /* Pods-LMGeocoderUniversal_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LMGeocoderUniversal_Tests-resources.sh"; sourceTree = "<group>"; };
-		DB8A69D8A0C880CA962671818319AA84 /* Pods_LMGeocoderUniversalMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LMGeocoderUniversalMac.framework; path = "Pods-LMGeocoderUniversalMac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96CA4096566FEFA68511F09C14A2EFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E464B6D5A84D2327519CB79B0608493C /* Pods-LMGeocoderUniversal_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LMGeocoderUniversal_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E4E0930D0A6B87DA8709BEC7C43A57D5 /* CDBKitLocalize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDBKitLocalize.m; path = Pod/Classes/Localize/CDBKitLocalize.m; sourceTree = "<group>"; };
 		E8982C26B497731156B3838EF45D4E67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E088BB95D32742A434D647146CDF36 /* CDBKit-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDBKit-iOS-prefix.pch"; sourceTree = "<group>"; };
 		F04E4530392A3829942491B872B6935D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4F82C730B5DA998F87E353DB9CCFB62 /* Pods-LMGeocoderUniversal_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LMGeocoderUniversal_Example-dummy.m"; sourceTree = "<group>"; };
+		FB1B1A5F1D36875F24A35C7A07A2471A /* CDBKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CDBKit.framework; path = "CDBKit-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC143E48502C30580FE41F27F0EA43BA /* LMGeocoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMGeocoder.m; path = LMGeocoderUniversal/Classes/LMGeocoder.m; sourceTree = "<group>"; };
 		FDF221446C16AC4AE17CF21A81F3C1C7 /* LMGeocoderUniversal-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LMGeocoderUniversal-iOS-dummy.m"; sourceTree = "<group>"; };
 		FE7176ED653A88E6A4AD34911AF36E6B /* Pods-LMGeocoderUniversal_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LMGeocoderUniversal_Tests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		49A824B878F7072708553E52AEF433AC /* Frameworks */ = {
+		2F81BB325AF14805198F379900AFBCF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1196D80BBF6919C79B53993678E9393 /* Cocoa.framework in Frameworks */,
+				FC9B9B5EBFD77092AD927F78443B8FC9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,34 +195,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		966F6A0AB99C27720776825A6F509A91 /* Frameworks */ = {
+		A90E8098C4FD6FB1E2CD53D9AF3D3CC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F202A92BE6D599947C6D299AD37BEBE /* Cocoa.framework in Frameworks */,
-				C1A65677DD8DBB4F3ADA4EE625249938 /* Foundation.framework in Frameworks */,
+				F8F653B0BE543A8C60D4751E3E2343A2 /* Cocoa.framework in Frameworks */,
+				92202E57E10B8F80F5603076F22FFAA5 /* CoreLocation.framework in Frameworks */,
+				F054D10EDDC95C522591138CBEB710B4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFF083A7DE64BDBF94E5E7D7AE741165 /* Frameworks */ = {
+		A912DF39AC24389E3697F1C73AA6D658 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFEFB0E388DD69D5DD4EE596A5ACB16 /* Foundation.framework in Frameworks */,
+				374AD5DC9F67375AB9B5A8EC63A2DBD8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7C5D56C8AFC762BE4C55A0CA7869FFA /* Frameworks */ = {
+		AF62A391E340C2F15DDCC21655978F48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C037E203F669377E36EE2AB9E9E7CD /* Foundation.framework in Frameworks */,
+				E4C405879FD08599DC1B537DE71B4CAB /* AppKit.framework in Frameworks */,
+				E5D411FFF3098DE964695F7CD39E807A /* Cocoa.framework in Frameworks */,
+				13A695855E694F03728C9FC82DE331B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CA5903CF764BF42F4C12C802704360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34BDDA807DAB689412CD5A44452F413 /* Foundation.framework in Frameworks */,
+				F80EE6D3CB37F1389EA0CCAE62C8F43B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3008D274B4C00B615826C40BF1DCC9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C33B4125B60BD198E7BF2086949A187 /* CoreLocation.framework in Frameworks */,
+				3387EB1E7C2D9393E99B5D42C491754A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24E0F83852DFE4A02D78451823382C4E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3703F1B6B1A4E292104C3C99EFDA95B5 /* CDBKitUI.h */,
+				65793F3DA0ADFB7C18A6687106DF6440 /* CDBKitUI.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		3CA8E866978DDCB040A32C9332CF5677 /* Pods-LMGeocoderUniversal_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,12 +271,12 @@
 			path = "Target Support Files/Pods-LMGeocoderUniversal_Example";
 			sourceTree = "<group>";
 		};
-		3DA7C2F2D3D1CF19496B054E7D987B08 /* iOS */ = {
+		3D262D1FE61FCA4AB9D78185BF8B5AE9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				33DFDE70F8890A2EE841E061CD964FCD /* Foundation.framework */,
+				AABD4A5845476EC31144CD0CA8E82827 /* CDBKit */,
 			);
-			name = iOS;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		49635C042F225D64A1EA5D8DBF79790A /* Pods-LMGeocoderUniversal_Tests */ = {
@@ -208,6 +305,45 @@
 				70EDE61F250C95B07BA7A44B0C9B79CD /* Pods-LMGeocoderUniversalMac */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		62187B86102B4EC3E0A50B8696B09EFD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2003DAF0115ECD4B7295A51E8223AD72 /* CDBKit-iOS.modulemap */,
+				42F3A25089D33F9007326F852BE90765 /* CDBKit-iOS.xcconfig */,
+				243B4F1B9B7D3293493AFA6F7171B099 /* CDBKit-iOS-dummy.m */,
+				E8E088BB95D32742A434D647146CDF36 /* CDBKit-iOS-prefix.pch */,
+				8BAB932980B06496FE7435347FC5C9B3 /* CDBKit-iOS-umbrella.h */,
+				A223B9753DD203AAAC8549864CBCE294 /* CDBKit-macOS.modulemap */,
+				626BF78DD4F6D98666C19CB06C71C051 /* CDBKit-macOS.xcconfig */,
+				64A4D4F3C7467B6A1B3FFEE6347FC01B /* CDBKit-macOS-dummy.m */,
+				8BBDA2E6E5A4826BE484E485C6DACA30 /* CDBKit-macOS-prefix.pch */,
+				1584C8249D0CDD38FCC30AD814BFE624 /* CDBKit-macOS-umbrella.h */,
+				B98BD7C1F4DC2C5A7DE42A3D5D618080 /* Info.plist */,
+				74B0C3FBF61BAAAE6C090851E8D336FE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CDBKit-iOS";
+			sourceTree = "<group>";
+		};
+		686CCCBBA99126DE477F855857CB8854 /* Localize */ = {
+			isa = PBXGroup;
+			children = (
+				0BC30BD30AB495F5803DE49309BD8000 /* CDBKitLocalize.h */,
+				E4E0930D0A6B87DA8709BEC7C43A57D5 /* CDBKitLocalize.m */,
+			);
+			name = Localize;
+			sourceTree = "<group>";
+		};
+		70638400D9F022C25DDB29EF9D24273F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7624ADCFA13E189EBFFF83134F54FD57 /* CoreLocation.framework */,
+				AC7C1948D833B5900976402FC3A3E5AE /* Foundation.framework */,
+				4F5B9BDEEFE6D9C437A0F74F029979D2 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		70EDE61F250C95B07BA7A44B0C9B79CD /* Pods-LMGeocoderUniversalMac */ = {
@@ -253,22 +389,11 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				9BAE753F4E05114E3C0FDE2873752EAE /* Development Pods */,
-				B3C2D6331B16C7BB39A27BBF5EF96D41 /* Frameworks */,
-				82665896FF092B24486DD0DA56943573 /* Products */,
+				EA0932C757F7C283990CBEAF981D8716 /* Frameworks */,
+				3D262D1FE61FCA4AB9D78185BF8B5AE9 /* Pods */,
+				C263F42892C9D11F9F5D1AD678F53E8C /* Products */,
 				4A6C19A7C3ED2F45B5F29D69BD60686E /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		82665896FF092B24486DD0DA56943573 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0D6C7B1BC25373AD6C874DBD14DFB429 /* LMGeocoderUniversal.framework */,
-				095827E92A8CBCC46DF7E405B795FF12 /* LMGeocoderUniversal.framework */,
-				9C8851A2C1C463D617C3F391B7E29601 /* Pods_LMGeocoderUniversal_Example.framework */,
-				36F98CA8B392F204CB0EC9E4F0AA6531 /* Pods_LMGeocoderUniversal_Tests.framework */,
-				DB8A69D8A0C880CA962671818319AA84 /* Pods_LMGeocoderUniversalMac.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		852FE9FB5B54E0CA632671F59F68D51A /* LMGeocoderUniversal */ = {
@@ -293,27 +418,78 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		B3C2D6331B16C7BB39A27BBF5EF96D41 /* Frameworks */ = {
+		AABD4A5845476EC31144CD0CA8E82827 /* CDBKit */ = {
 			isa = PBXGroup;
 			children = (
-				3DA7C2F2D3D1CF19496B054E7D987B08 /* iOS */,
-				FDA50F0C048BA7E6D9D1EFD6AA8A9D5F /* OS X */,
+				96385A2B2EEF5DDBE311D8A777AD3A48 /* CDBKit.h */,
+				AD4DE27EDB09DA6067F3452FEE5851B3 /* CDBKit.m */,
+				FE286537B02A0218BCB5F3529B511768 /* Core */,
+				686CCCBBA99126DE477F855857CB8854 /* Localize */,
+				62187B86102B4EC3E0A50B8696B09EFD /* Support Files */,
+				24E0F83852DFE4A02D78451823382C4E /* UI */,
+			);
+			name = CDBKit;
+			path = CDBKit;
+			sourceTree = "<group>";
+		};
+		B68316FED65F563BE9857E8CD0482715 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				1069551AC60E53AEAD27B8971A8E67E8 /* AppKit.framework */,
+				47B62B545428FA1A3DF60254DF32601A /* Cocoa.framework */,
+				83242B46DDCDA01FFFEAC3CF22ACEA28 /* CoreLocation.framework */,
+				D96CA4096566FEFA68511F09C14A2EFF /* Foundation.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		C263F42892C9D11F9F5D1AD678F53E8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB1B1A5F1D36875F24A35C7A07A2471A /* CDBKit.framework */,
+				024F9B772CB809E154766B136B9CBC6D /* CDBKit.framework */,
+				30EB03798E6E3B796F6DEEF35BDBBD32 /* LMGeocoderUniversal.framework */,
+				BC6555E40FFECB006EF80536C32801C8 /* LMGeocoderUniversal.framework */,
+				9DC40F95D457DA0A6F64A07B412542C5 /* Pods_LMGeocoderUniversal_Example.framework */,
+				926D5341409E75DE77DCBABC3CC7136B /* Pods_LMGeocoderUniversal_Tests.framework */,
+				B276B8B9EB349095BBA66FDD8D20C176 /* Pods_LMGeocoderUniversalMac.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA0932C757F7C283990CBEAF981D8716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70638400D9F022C25DDB29EF9D24273F /* iOS */,
+				B68316FED65F563BE9857E8CD0482715 /* OS X */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FDA50F0C048BA7E6D9D1EFD6AA8A9D5F /* OS X */ = {
+		FE286537B02A0218BCB5F3529B511768 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				8006F2EA269E58F8DF71D5033D2D0468 /* Cocoa.framework */,
-				669D4B9F6D8CE390EBE080C9E8C2805D /* Foundation.framework */,
+				06AAD34EF4EE199782B9FA5F6E00D38E /* CDBKitCore.h */,
+				582DBCDF5514B78F3DEA0EAC4A9A3F77 /* CDBKitCore.m */,
 			);
-			name = "OS X";
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1590ECEE90779116E8612CD2470EBBB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172F858C6D555E63949C9AE6F1D04790 /* CDBKit-macOS-umbrella.h in Headers */,
+				D939856A5EF1BF97679EF26F5BAB4539 /* CDBKit.h in Headers */,
+				84B37582C872E63FAA9229132EB98297 /* CDBKitCore.h in Headers */,
+				A59BA4DB4BD24D8A9660FEABA3A07D0D /* CDBKitLocalize.h in Headers */,
+				98A70783902AF58680DD7AD86256A526 /* CDBKitUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F1AFCE71E649823662108B1BA29C789 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,54 +498,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D0FEE2DFC5D940FB366667CFDA35A3B /* Headers */ = {
+		533CC35D189DF727130130E96723ED17 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4FB6E1263AD88E2F079440F7B74BFAD /* LMAddress.h in Headers */,
-				D52D11684D2E725A346153FF4279C3D3 /* LMGeocoder.h in Headers */,
-				7D3FADCB99960C15F16E9C4661DD55FA /* LMGeocoderUniversal-iOS-umbrella.h in Headers */,
-				B8CC57CC11089D61BA60562B7BDC9081 /* LMGeocoderUniversal.h in Headers */,
+				613E99272E71A470CD42E1174ED92AC7 /* CDBKit-iOS-umbrella.h in Headers */,
+				D3E2999BA8AB3682EABE3883C26B7340 /* CDBKit.h in Headers */,
+				85F99827FC054A56566D16DA1E531567 /* CDBKitCore.h in Headers */,
+				009B53FF27C8222F549D68F1C03FB33A /* CDBKitLocalize.h in Headers */,
+				7449186E6AF5AFFA2E3D2CE3E30FCE7A /* CDBKitUI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E43E4A384E0466DB8983859C58CE78F7 /* Headers */ = {
+		9F0A6674FFDF527D4BA619A50881A842 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF17C0C26708F0EF96A3805149587C0 /* LMAddress.h in Headers */,
-				3D0B68E0662DF9A322C80BCF7D3401DA /* LMGeocoder.h in Headers */,
-				D4B800DF8C48ED3BFDE5BBF41EBC18A9 /* LMGeocoderUniversal-macOS-umbrella.h in Headers */,
-				A4280F5804952ED82A0EB5BDE0B6F925 /* LMGeocoderUniversal.h in Headers */,
+				E84AC597742C0AE592DDAF73B01BA2C8 /* Pods-LMGeocoderUniversalMac-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E464E9753C2D094983E39BC7ABA3B6D1 /* Headers */ = {
+		ABCA9F88456A91ABDE63E7D906ABDFC2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20C8E219065E927ECFE30919C5DDAEC /* Pods-LMGeocoderUniversal_Example-umbrella.h in Headers */,
+				02B0DB0B7B3A7DCD3D8B31D44AB3D4A3 /* LMAddress.h in Headers */,
+				CD4CF9E5F6C016C95A2AF425ECF5D205 /* LMGeocoder.h in Headers */,
+				73DBE810786AD2EFD794DD99DEE31015 /* LMGeocoderUniversal-iOS-umbrella.h in Headers */,
+				25BAC2F0F9116BD2014695F0FA8A2AD4 /* LMGeocoderUniversal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA6551C5A34303C812697C9C8F58C055 /* Headers */ = {
+		E836D6DCB1461F7C8A6EB811AA8DB1E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BD2B3BC1B49823AB187AB2FFC16CBAA /* Pods-LMGeocoderUniversalMac-umbrella.h in Headers */,
+				B83F932323C9EE04D6ADE16287042738 /* LMAddress.h in Headers */,
+				8961EE345E87A9DB79107364A6026CEF /* LMGeocoder.h in Headers */,
+				5E6CC187B3991DAFD0B3FCE4967139FA /* LMGeocoderUniversal-macOS-umbrella.h in Headers */,
+				0A33B1244D2D1B6CEFB69F878D09550B /* LMGeocoderUniversal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E94B3ECFA91B3D0F1841170DD67E55A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2026D397F13D8C23D7373FAEA47F7AE /* Pods-LMGeocoderUniversal_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4A162D513D3DEC9FE74CCAC7ABFDBBD3 /* LMGeocoderUniversal-macOS */ = {
+		423679F3AE3806D60B09DCAFC0A74A4C /* CDBKit-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58931C95EE053F546B7CCFE0DBFE6418 /* Build configuration list for PBXNativeTarget "LMGeocoderUniversal-macOS" */;
+			buildConfigurationList = E8D8E781E9F130BEF3DB4F6AF81EA1FB /* Build configuration list for PBXNativeTarget "CDBKit-iOS" */;
 			buildPhases = (
-				75D077B26150C2B78321DD9F2504C3F1 /* Sources */,
-				966F6A0AB99C27720776825A6F509A91 /* Frameworks */,
-				E43E4A384E0466DB8983859C58CE78F7 /* Headers */,
+				671D5BFBBD90B3E032BFE988A344F90C /* Sources */,
+				C0CA5903CF764BF42F4C12C802704360 /* Frameworks */,
+				533CC35D189DF727130130E96723ED17 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CDBKit-iOS";
+			productName = "CDBKit-iOS";
+			productReference = FB1B1A5F1D36875F24A35C7A07A2471A /* CDBKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		518046116E95908499B6BCC6018EFDE2 /* LMGeocoderUniversal-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A72201A62A10CFB250332F30D53BE71 /* Build configuration list for PBXNativeTarget "LMGeocoderUniversal-macOS" */;
+			buildPhases = (
+				CAAE34D73C931D42B8FFE4E4BFB0B8F1 /* Sources */,
+				A90E8098C4FD6FB1E2CD53D9AF3D3CC8 /* Frameworks */,
+				E836D6DCB1461F7C8A6EB811AA8DB1E1 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -377,25 +582,7 @@
 			);
 			name = "LMGeocoderUniversal-macOS";
 			productName = "LMGeocoderUniversal-macOS";
-			productReference = 095827E92A8CBCC46DF7E405B795FF12 /* LMGeocoderUniversal.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		530DDA680C4A4FA62D2E58E3BA64787B /* Pods-LMGeocoderUniversal_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2A25101C547C04D1E3B9C94D4C5B0787 /* Build configuration list for PBXNativeTarget "Pods-LMGeocoderUniversal_Example" */;
-			buildPhases = (
-				AB9B1CFE72AD4C81E248F162429607DA /* Sources */,
-				AFF083A7DE64BDBF94E5E7D7AE741165 /* Frameworks */,
-				E464E9753C2D094983E39BC7ABA3B6D1 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F74BBC33E118FD9D1E6438FBE8487B6A /* PBXTargetDependency */,
-			);
-			name = "Pods-LMGeocoderUniversal_Example";
-			productName = "Pods-LMGeocoderUniversal_Example";
-			productReference = 9C8851A2C1C463D617C3F391B7E29601 /* Pods_LMGeocoderUniversal_Example.framework */;
+			productReference = BC6555E40FFECB006EF80536C32801C8 /* LMGeocoderUniversal.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		64CFC7FB607F292D02A8AE4EC0D88693 /* Pods-LMGeocoderUniversal_Tests */ = {
@@ -412,34 +599,35 @@
 			);
 			name = "Pods-LMGeocoderUniversal_Tests";
 			productName = "Pods-LMGeocoderUniversal_Tests";
-			productReference = 36F98CA8B392F204CB0EC9E4F0AA6531 /* Pods_LMGeocoderUniversal_Tests.framework */;
+			productReference = 926D5341409E75DE77DCBABC3CC7136B /* Pods_LMGeocoderUniversal_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9819FD37889A643C0EEB0A63BE830A24 /* Pods-LMGeocoderUniversalMac */ = {
+		6669C3F7F05E62E8F00E1DC773AEBE43 /* Pods-LMGeocoderUniversal_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61985E846B4C37458AA14497819D318D /* Build configuration list for PBXNativeTarget "Pods-LMGeocoderUniversalMac" */;
+			buildConfigurationList = 26BC5F9926ED382478F1354DDDE5E1F7 /* Build configuration list for PBXNativeTarget "Pods-LMGeocoderUniversal_Example" */;
 			buildPhases = (
-				D97F3FC3AC714A97AB8A88519B802AA4 /* Sources */,
-				49A824B878F7072708553E52AEF433AC /* Frameworks */,
-				EA6551C5A34303C812697C9C8F58C055 /* Headers */,
+				E0152123C02C167EB87DE144291A8B8A /* Sources */,
+				A912DF39AC24389E3697F1C73AA6D658 /* Frameworks */,
+				E94B3ECFA91B3D0F1841170DD67E55A4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2EFFA925046DF9AC2796684FF4C496D9 /* PBXTargetDependency */,
+				0C8645560B95CD14BC5A14DF1AE38465 /* PBXTargetDependency */,
+				9D683C32A51AA2FB6C9CBEF5EBCD3A5C /* PBXTargetDependency */,
 			);
-			name = "Pods-LMGeocoderUniversalMac";
-			productName = "Pods-LMGeocoderUniversalMac";
-			productReference = DB8A69D8A0C880CA962671818319AA84 /* Pods_LMGeocoderUniversalMac.framework */;
+			name = "Pods-LMGeocoderUniversal_Example";
+			productName = "Pods-LMGeocoderUniversal_Example";
+			productReference = 9DC40F95D457DA0A6F64A07B412542C5 /* Pods_LMGeocoderUniversal_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2ECD5283E3A77FF46726A01CC40DB3B /* LMGeocoderUniversal-iOS */ = {
+		6B0EFFDB219F74C357946C8026BFBB87 /* LMGeocoderUniversal-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF720CA2C8CE5C30116ACC498782056D /* Build configuration list for PBXNativeTarget "LMGeocoderUniversal-iOS" */;
+			buildConfigurationList = 32DD07BDF43E255A3873697F06221017 /* Build configuration list for PBXNativeTarget "LMGeocoderUniversal-iOS" */;
 			buildPhases = (
-				10B0169986D7CA19A1B94175EBB46DBE /* Sources */,
-				C7C5D56C8AFC762BE4C55A0CA7869FFA /* Frameworks */,
-				4D0FEE2DFC5D940FB366667CFDA35A3B /* Headers */,
+				A6D2D2AE85471C1A3D61B0C020169F24 /* Sources */,
+				F3008D274B4C00B615826C40BF1DCC9E /* Frameworks */,
+				ABCA9F88456A91ABDE63E7D906ABDFC2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -447,7 +635,43 @@
 			);
 			name = "LMGeocoderUniversal-iOS";
 			productName = "LMGeocoderUniversal-iOS";
-			productReference = 0D6C7B1BC25373AD6C874DBD14DFB429 /* LMGeocoderUniversal.framework */;
+			productReference = 30EB03798E6E3B796F6DEEF35BDBBD32 /* LMGeocoderUniversal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6BADF8169222327767EB05AB0A7173B2 /* CDBKit-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25848D0A9B257FCDB840DA67DA93D787 /* Build configuration list for PBXNativeTarget "CDBKit-macOS" */;
+			buildPhases = (
+				C41620FA6F409C0EA7BA8FD9CCBAAB1C /* Sources */,
+				AF62A391E340C2F15DDCC21655978F48 /* Frameworks */,
+				1590ECEE90779116E8612CD2470EBBB1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CDBKit-macOS";
+			productName = "CDBKit-macOS";
+			productReference = 024F9B772CB809E154766B136B9CBC6D /* CDBKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93C807F185A277A6580D2E8B86088824 /* Pods-LMGeocoderUniversalMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB7AF78344CC24314F3FBBC64970801 /* Build configuration list for PBXNativeTarget "Pods-LMGeocoderUniversalMac" */;
+			buildPhases = (
+				590716E50C72E47A1E6169BAAFDD4152 /* Sources */,
+				2F81BB325AF14805198F379900AFBCF4 /* Frameworks */,
+				9F0A6674FFDF527D4BA619A50881A842 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C224851998FB2157C92431E419F2DDA3 /* PBXTargetDependency */,
+				BA8FA589FCD569788826FFAE95B35488 /* PBXTargetDependency */,
+			);
+			name = "Pods-LMGeocoderUniversalMac";
+			productName = "Pods-LMGeocoderUniversalMac";
+			productReference = B276B8B9EB349095BBA66FDD8D20C176 /* Pods_LMGeocoderUniversalMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -467,53 +691,79 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 82665896FF092B24486DD0DA56943573 /* Products */;
+			productRefGroup = C263F42892C9D11F9F5D1AD678F53E8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2ECD5283E3A77FF46726A01CC40DB3B /* LMGeocoderUniversal-iOS */,
-				4A162D513D3DEC9FE74CCAC7ABFDBBD3 /* LMGeocoderUniversal-macOS */,
-				530DDA680C4A4FA62D2E58E3BA64787B /* Pods-LMGeocoderUniversal_Example */,
+				423679F3AE3806D60B09DCAFC0A74A4C /* CDBKit-iOS */,
+				6BADF8169222327767EB05AB0A7173B2 /* CDBKit-macOS */,
+				6B0EFFDB219F74C357946C8026BFBB87 /* LMGeocoderUniversal-iOS */,
+				518046116E95908499B6BCC6018EFDE2 /* LMGeocoderUniversal-macOS */,
+				6669C3F7F05E62E8F00E1DC773AEBE43 /* Pods-LMGeocoderUniversal_Example */,
 				64CFC7FB607F292D02A8AE4EC0D88693 /* Pods-LMGeocoderUniversal_Tests */,
-				9819FD37889A643C0EEB0A63BE830A24 /* Pods-LMGeocoderUniversalMac */,
+				93C807F185A277A6580D2E8B86088824 /* Pods-LMGeocoderUniversalMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		10B0169986D7CA19A1B94175EBB46DBE /* Sources */ = {
+		590716E50C72E47A1E6169BAAFDD4152 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AA7E0891DFCFB4919A8DBB3F1E8D0B6 /* LMAddress.m in Sources */,
-				D9D8436C50CD4BD8C4DBB7EBD83FACE6 /* LMGeocoder.m in Sources */,
-				009D00521FD093B9763DEDB1588056F2 /* LMGeocoderUniversal-iOS-dummy.m in Sources */,
+				530E30ACD46FB5A40F04C9711A9A6135 /* Pods-LMGeocoderUniversalMac-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75D077B26150C2B78321DD9F2504C3F1 /* Sources */ = {
+		671D5BFBBD90B3E032BFE988A344F90C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021C4FE27EB023D82654FCC78DF2CF5D /* LMAddress.m in Sources */,
-				9EC1BDADF2F565EB7D2D7A365F72B65A /* LMGeocoder.m in Sources */,
-				C682988A0171F78B5E32546A66752C77 /* LMGeocoderUniversal-macOS-dummy.m in Sources */,
+				725F3F09779A31CD03479312C76EC3CF /* CDBKit-iOS-dummy.m in Sources */,
+				919BB3AE850D24461EA89DE0311E8DE9 /* CDBKit.m in Sources */,
+				AD46505AFF3F70C41A682045C7C3ED3B /* CDBKitCore.m in Sources */,
+				552F22ECF614577B52BF7BFD4074AD8B /* CDBKitLocalize.m in Sources */,
+				71F2B284C10D9D7084771F19C0C6D449 /* CDBKitUI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB9B1CFE72AD4C81E248F162429607DA /* Sources */ = {
+		A6D2D2AE85471C1A3D61B0C020169F24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CF78B5AF13E8BF2878C4EC887D70701 /* Pods-LMGeocoderUniversal_Example-dummy.m in Sources */,
+				C47DD455C59D33678F744FFCB3ED2DCF /* LMAddress.m in Sources */,
+				57CC459D373466E0946971BDA3FB1192 /* LMGeocoder.m in Sources */,
+				BC5B1F2177D52FD2FDBDA7C28D83FD50 /* LMGeocoderUniversal-iOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D97F3FC3AC714A97AB8A88519B802AA4 /* Sources */ = {
+		C41620FA6F409C0EA7BA8FD9CCBAAB1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39FC2497523768F8792752CD960AA679 /* Pods-LMGeocoderUniversalMac-dummy.m in Sources */,
+				1F2F1B5B083AB39D5B07C719E30754F4 /* CDBKit-macOS-dummy.m in Sources */,
+				E2709F2C6BA367168569CC1416C8E520 /* CDBKit.m in Sources */,
+				384B68A01A16F82318AE194BA7B2D2DF /* CDBKitCore.m in Sources */,
+				A1B64D1BC271F0A91550B9F6C6CF7A07 /* CDBKitLocalize.m in Sources */,
+				5D3344688C57DA3116345460EC587498 /* CDBKitUI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAAE34D73C931D42B8FFE4E4BFB0B8F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637D22B0CCFFEF623EA587EC799EA8DE /* LMAddress.m in Sources */,
+				E1CBA8B1C33C9122014E5930013070E9 /* LMGeocoder.m in Sources */,
+				766220CD5DC605FE717E859CD6F5E9B2 /* LMGeocoderUniversal-macOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0152123C02C167EB87DE144291A8B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5840FC67C606BD98B5AAF131336066 /* Pods-LMGeocoderUniversal_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,22 +778,250 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2EFFA925046DF9AC2796684FF4C496D9 /* PBXTargetDependency */ = {
+		0C8645560B95CD14BC5A14DF1AE38465 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "LMGeocoderUniversal-macOS";
-			target = 4A162D513D3DEC9FE74CCAC7ABFDBBD3 /* LMGeocoderUniversal-macOS */;
-			targetProxy = BF4FD1E7CFE38F6D1CE8A4DD09D1C6B6 /* PBXContainerItemProxy */;
+			name = "CDBKit-iOS";
+			target = 423679F3AE3806D60B09DCAFC0A74A4C /* CDBKit-iOS */;
+			targetProxy = 21DE6D798D8FCEACBD1EBE2EBCDB29A3 /* PBXContainerItemProxy */;
 		};
-		F74BBC33E118FD9D1E6438FBE8487B6A /* PBXTargetDependency */ = {
+		9D683C32A51AA2FB6C9CBEF5EBCD3A5C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "LMGeocoderUniversal-iOS";
-			target = A2ECD5283E3A77FF46726A01CC40DB3B /* LMGeocoderUniversal-iOS */;
-			targetProxy = 22B58A878BC3047B9ABACC24A0C6C8B6 /* PBXContainerItemProxy */;
+			target = 6B0EFFDB219F74C357946C8026BFBB87 /* LMGeocoderUniversal-iOS */;
+			targetProxy = 2ADFFF6F00355838FF04C15E62EC84CB /* PBXContainerItemProxy */;
+		};
+		BA8FA589FCD569788826FFAE95B35488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LMGeocoderUniversal-macOS";
+			target = 518046116E95908499B6BCC6018EFDE2 /* LMGeocoderUniversal-macOS */;
+			targetProxy = 6FC6DD6CEA39C847613877D05DA9135A /* PBXContainerItemProxy */;
+		};
+		C224851998FB2157C92431E419F2DDA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CDBKit-macOS";
+			target = 6BADF8169222327767EB05AB0A7173B2 /* CDBKit-macOS */;
+			targetProxy = 1979C42EB33355157708DED42F9940DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0D54D9BE4EB51B222FED21FB6A4B7B79 /* Debug */ = {
+		06E1D202072CE5109E6D92B93690B256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EE6461F50390A587BE185718AE59F7A /* Pods-LMGeocoderUniversal_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Tests/Pods-LMGeocoderUniversal_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LMGeocoderUniversal_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		106872389401FB75E623FC414285816C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F494F87617184ACCF6AE56120FDA94B /* Pods-LMGeocoderUniversal_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Tests/Pods-LMGeocoderUniversal_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LMGeocoderUniversal_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F83EA25610D43F6ADC54668489BEB22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626BF78DD4F6D98666C19CB06C71C051 /* CDBKit-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/CDBKit-macOS/CDBKit-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDBKit-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/CDBKit-macOS/CDBKit-macOS.modulemap";
+				PRODUCT_NAME = CDBKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		20E174F7EA9A1797FBD4F58CF148A889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63EFC4F1FC134FBBE3DFC722F8A9955A /* Pods-LMGeocoderUniversal_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Example/Pods-LMGeocoderUniversal_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LMGeocoderUniversal_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F0A9534D23F66EFC419020F98949737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42F3A25089D33F9007326F852BE90765 /* CDBKit-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CDBKit-iOS/CDBKit-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDBKit-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CDBKit-iOS/CDBKit-iOS.modulemap";
+				PRODUCT_NAME = CDBKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AD6466A5DA0AB18801B07E26392E7F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7ACB222F1AA26B29BAF36B19A674851 /* LMGeocoderUniversal-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LMGeocoderUniversal-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS.modulemap";
+				PRODUCT_NAME = LMGeocoderUniversal;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E6721015FA00EB3396B31D438E29D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93A2B330489E30654A3E514D0295E01B /* LMGeocoderUniversal-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LMGeocoderUniversal-iOS/LMGeocoderUniversal-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LMGeocoderUniversal-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LMGeocoderUniversal-iOS/LMGeocoderUniversal-iOS.modulemap";
+				PRODUCT_NAME = LMGeocoderUniversal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9543F8914234D26E2D6F3E3A8F6B41C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B065B09E19CD99906437EFD4B00E7B3 /* Pods-LMGeocoderUniversalMac.debug.xcconfig */;
 			buildSettings = {
@@ -562,7 +1040,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = "Target Support Files/Pods-LMGeocoderUniversalMac/Pods-LMGeocoderUniversalMac.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -576,37 +1054,7 @@
 			};
 			name = Debug;
 		};
-		1D39F8D8B62A528F33710433B8D6482E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7ACB222F1AA26B29BAF36B19A674851 /* LMGeocoderUniversal-macOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LMGeocoderUniversal-macOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS.modulemap";
-				PRODUCT_NAME = LMGeocoderUniversal;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		25DFCE9C0AD3FB55AAC2811150B2BB4F /* Debug */ = {
+		9FFB1FF8BE03AF062C70F171FB7E95D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93A2B330489E30654A3E514D0295E01B /* LMGeocoderUniversal-iOS.xcconfig */;
 			buildSettings = {
@@ -622,7 +1070,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LMGeocoderUniversal-iOS/LMGeocoderUniversal-iOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LMGeocoderUniversal-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LMGeocoderUniversal-iOS/LMGeocoderUniversal-iOS.modulemap";
 				PRODUCT_NAME = LMGeocoderUniversal;
@@ -630,12 +1078,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		284E9BCA22F61724826538D3485B1F26 /* Release */ = {
+		A5CD0DC7EB6F91BF02ABE4D7C8899351 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18CEC8341CB9A3E2B9287D2DBCDCACF3 /* Pods-LMGeocoderUniversalMac.release.xcconfig */;
 			buildSettings = {
@@ -654,7 +1103,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = "Target Support Files/Pods-LMGeocoderUniversalMac/Pods-LMGeocoderUniversalMac.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -668,9 +1117,9 @@
 			};
 			name = Release;
 		};
-		4BD38FB7599246B2008C1861E2135311 /* Debug */ = {
+		B1984DEDFF937A8423CF5E8838622F8E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F494F87617184ACCF6AE56120FDA94B /* Pods-LMGeocoderUniversal_Tests.debug.xcconfig */;
+			baseConfigurationReference = 22DE36B4E88D0BE486CD3A41D8BBF7C4 /* Pods-LMGeocoderUniversal_Example.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -681,49 +1130,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Tests/Pods-LMGeocoderUniversal_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Example/Pods-LMGeocoderUniversal_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LMGeocoderUniversal_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		666A59EF84657AFC64DC8052AD55A1A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EE6461F50390A587BE185718AE59F7A /* Pods-LMGeocoderUniversal_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Tests/Pods-LMGeocoderUniversal_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LMGeocoderUniversal_Tests;
+				PRODUCT_NAME = Pods_LMGeocoderUniversal_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -733,37 +1150,7 @@
 			};
 			name = Release;
 		};
-		6FF2E043C3A6DDC4944D9A846A0976CB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7ACB222F1AA26B29BAF36B19A674851 /* LMGeocoderUniversal-macOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LMGeocoderUniversal-macOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS.modulemap";
-				PRODUCT_NAME = LMGeocoderUniversal;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		874FFA5A8FC211E953A09F696705ADE1 /* Release */ = {
+		BE963AB0B004A8D200E4FD7E5101F8A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -809,8 +1196,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
@@ -819,7 +1206,37 @@
 			};
 			name = Release;
 		};
-		8E06E589405429CF7F4264984462301D /* Debug */ = {
+		BF18B038E33D76F0FDFDBACCD5AC43E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626BF78DD4F6D98666C19CB06C71C051 /* CDBKit-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/CDBKit-macOS/CDBKit-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDBKit-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/CDBKit-macOS/CDBKit-macOS.modulemap";
+				PRODUCT_NAME = CDBKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C75B63A0F215865CD8AA35D2237B93C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -868,8 +1285,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -880,9 +1297,9 @@
 			};
 			name = Debug;
 		};
-		B86C35A3851C605940CF0FA44DDA57DC /* Release */ = {
+		E7AAA63D2BEA3F1507DF73ADCEF96DC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22DE36B4E88D0BE486CD3A41D8BBF7C4 /* Pods-LMGeocoderUniversal_Example.release.xcconfig */;
+			baseConfigurationReference = 42F3A25089D33F9007326F852BE90765 /* CDBKit-iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -893,87 +1310,51 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CDBKit-iOS/CDBKit-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDBKit-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Example/Pods-LMGeocoderUniversal_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LMGeocoderUniversal_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CDE13FA076668AF2A31C078805BFE3A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93A2B330489E30654A3E514D0295E01B /* LMGeocoderUniversal-iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LMGeocoderUniversal-iOS/LMGeocoderUniversal-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LMGeocoderUniversal-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LMGeocoderUniversal-iOS/LMGeocoderUniversal-iOS.modulemap";
-				PRODUCT_NAME = LMGeocoderUniversal;
+				MODULEMAP_FILE = "Target Support Files/CDBKit-iOS/CDBKit-iOS.modulemap";
+				PRODUCT_NAME = CDBKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E8D05584BB6B9E0EBA6B6152D897AFBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63EFC4F1FC134FBBE3DFC722F8A9955A /* Pods-LMGeocoderUniversal_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LMGeocoderUniversal_Example/Pods-LMGeocoderUniversal_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LMGeocoderUniversal_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		EB2643D8583AAC4C210DC7EA7D6E1A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7ACB222F1AA26B29BAF36B19A674851 /* LMGeocoderUniversal-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LMGeocoderUniversal-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/LMGeocoderUniversal-macOS/LMGeocoderUniversal-macOS.modulemap";
+				PRODUCT_NAME = LMGeocoderUniversal;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -981,17 +1362,26 @@
 		19D1AC6C7F95D52149A02909769C71E4 /* Build configuration list for PBXNativeTarget "Pods-LMGeocoderUniversal_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD38FB7599246B2008C1861E2135311 /* Debug */,
-				666A59EF84657AFC64DC8052AD55A1A0 /* Release */,
+				106872389401FB75E623FC414285816C /* Debug */,
+				06E1D202072CE5109E6D92B93690B256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A25101C547C04D1E3B9C94D4C5B0787 /* Build configuration list for PBXNativeTarget "Pods-LMGeocoderUniversal_Example" */ = {
+		25848D0A9B257FCDB840DA67DA93D787 /* Build configuration list for PBXNativeTarget "CDBKit-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E8D05584BB6B9E0EBA6B6152D897AFBE /* Debug */,
-				B86C35A3851C605940CF0FA44DDA57DC /* Release */,
+				1F83EA25610D43F6ADC54668489BEB22 /* Debug */,
+				BF18B038E33D76F0FDFDBACCD5AC43E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26BC5F9926ED382478F1354DDDE5E1F7 /* Build configuration list for PBXNativeTarget "Pods-LMGeocoderUniversal_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E174F7EA9A1797FBD4F58CF148A889 /* Debug */,
+				B1984DEDFF937A8423CF5E8838622F8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -999,35 +1389,44 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E06E589405429CF7F4264984462301D /* Debug */,
-				874FFA5A8FC211E953A09F696705ADE1 /* Release */,
+				C75B63A0F215865CD8AA35D2237B93C0 /* Debug */,
+				BE963AB0B004A8D200E4FD7E5101F8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58931C95EE053F546B7CCFE0DBFE6418 /* Build configuration list for PBXNativeTarget "LMGeocoderUniversal-macOS" */ = {
+		32DD07BDF43E255A3873697F06221017 /* Build configuration list for PBXNativeTarget "LMGeocoderUniversal-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FF2E043C3A6DDC4944D9A846A0976CB /* Debug */,
-				1D39F8D8B62A528F33710433B8D6482E /* Release */,
+				7E6721015FA00EB3396B31D438E29D3D /* Debug */,
+				9FFB1FF8BE03AF062C70F171FB7E95D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61985E846B4C37458AA14497819D318D /* Build configuration list for PBXNativeTarget "Pods-LMGeocoderUniversalMac" */ = {
+		5A72201A62A10CFB250332F30D53BE71 /* Build configuration list for PBXNativeTarget "LMGeocoderUniversal-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0D54D9BE4EB51B222FED21FB6A4B7B79 /* Debug */,
-				284E9BCA22F61724826538D3485B1F26 /* Release */,
+				6AD6466A5DA0AB18801B07E26392E7F1 /* Debug */,
+				EB2643D8583AAC4C210DC7EA7D6E1A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF720CA2C8CE5C30116ACC498782056D /* Build configuration list for PBXNativeTarget "LMGeocoderUniversal-iOS" */ = {
+		6EB7AF78344CC24314F3FBBC64970801 /* Build configuration list for PBXNativeTarget "Pods-LMGeocoderUniversalMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25DFCE9C0AD3FB55AAC2811150B2BB4F /* Debug */,
-				CDE13FA076668AF2A31C078805BFE3A9 /* Release */,
+				9543F8914234D26E2D6F3E3A8F6B41C5 /* Debug */,
+				A5CD0DC7EB6F91BF02ABE4D7C8899351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8D8E781E9F130BEF3DB4F6AF81EA1FB /* Build configuration list for PBXNativeTarget "CDBKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7AAA63D2BEA3F1507DF73ADCEF96DC2 /* Debug */,
+				4F0A9534D23F66EFC419020F98949737 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -2,14 +2,16 @@ use_frameworks!
 
 
 target 'LMGeocoderUniversalMac' do
-    platform :osx, '10.11'
+    platform :osx, '10.10'
+    pod 'CDBKit', '~> 1.4'
     pod 'LMGeocoderUniversal', :path => '../'
     
 end
 
 target 'LMGeocoderUniversal_Example' do
+  platform :ios, '10.0'
   pod 'LMGeocoderUniversal', :path => '../'
-  platform :ios, '9.0'
+  pod 'CDBKit', '~> 1.4'
   target 'LMGeocoderUniversal_Tests' do
       
     inherit! :search_paths

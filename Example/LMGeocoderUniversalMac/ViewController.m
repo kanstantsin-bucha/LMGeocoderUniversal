@@ -15,11 +15,33 @@
     
     [super viewDidLoad];
 
+    NSError * error = nil;
     LMGeocoder * geocoder = [LMGeocoder geocoder];
-    NSArray * result = [geocoder geocodeAddressString: @"Minsk. Belarus"
+    NSArray * result = [geocoder geocodeAddressString: @"Mc Donalds Minsk Belarus"
                                               service: kLMGeocoderGoogleService
-                                                error: nil];
-    NSLog(@"%@", [(LMAddress *)result.firstObject country]);
+                                                error: &error];
+    NSLog(@"Google: %@ %@", (LMAddress *)result.firstObject, error);
+
+    error = nil;
+    
+    result = [geocoder geocodeAddressString: @"Mc Donalds Minsk Belarus"
+                                    service: kLMGeocoderAppleService
+                                      error: &error];
+    NSLog(@"Apple: %@ %@", (LMAddress *)result.firstObject, error);
+    
+    error = nil;
+    
+    result = [geocoder geocodeAddressString: @"Eiffel Tower"
+                                    service: kLMGeocoderGoogleService
+                                      error: &error];
+    NSLog(@"Google: %@ %@", (LMAddress *)result.firstObject, error);
+    
+    error = nil;
+    
+    result = [geocoder geocodeAddressString: @"Eiffel Tower"
+                                    service: kLMGeocoderAppleService
+                                      error: &error];
+    NSLog(@"Apple: %@ %@", (LMAddress *)result.firstObject, error);
 }
 
 

@@ -8,6 +8,7 @@
 
 #import "LMViewController.h"
 #import <LMGeocoderUniversal/LMGeocoderUniversal.h>
+#import <CDBKit/CDBKit.h>
 
 @interface LMViewController ()
 
@@ -18,12 +19,32 @@
 - (void) viewDidLoad {
     
     [super viewDidLoad];
-	
+    
+    [self geocodeAddress: @"Mc Donalds Minsk Belarus"
+              completion: ^{
+        [self geocodeAddress: @"Eiffel Tower"
+                  completion: ^{}];
+    }];
+    
+}
+
+- (void) geocodeAddress: (NSString *) address
+             completion: (nonnull CDBCompletion) completion {
     LMGeocoder * geocoder = [LMGeocoder geocoder];
-    NSArray * result = [geocoder geocodeAddressString: @"Minsk. Belarus"
-                                              service: kLMGeocoderGoogleService
-                                                error: nil];
-    NSLog(@"%@", [(LMAddress *)result.firstObject country]);
+    
+    [geocoder geocodeAddressString:  address
+                           service: kLMGeocoderGoogleService
+                 completionHandler: ^(NSArray<LMAddress *> * _Nullable results, NSError * _Nullable error) {
+                     NSLog(@"Google: %@ %@", (LMAddress *)results.firstObject, error);
+                     
+        [geocoder geocodeAddressString:  address
+                               service: kLMGeocoderAppleService
+                     completionHandler: ^(NSArray<LMAddress *> * _Nullable results, NSError * _Nullable error) {
+            NSLog(@"Apple: %@ %@", (LMAddress *)results.firstObject, error);
+            
+            completion();
+        }];
+    }];
 }
 
 - (void)didReceiveMemoryWarning

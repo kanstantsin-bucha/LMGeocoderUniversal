@@ -67,6 +67,10 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                      service:(LMGeocoderService)service
            completionHandler:(LMGeocodeCallback)handler
 {
+    if (handler == nil) {
+        return;
+    }
+    
     _isGeocoding = YES;
     
     // Check address string
@@ -78,9 +82,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                                          userInfo:nil];
         
         _isGeocoding = NO;
-        if (handler) {
-            handler(nil, error);
-        }
+        handler(nil, error);
     }
     else
     {
@@ -96,12 +98,11 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                 }
                 [self buildAsynchronousRequestFromURLString:urlString
                                           completionHandler:^(NSArray<LMAddress *> * _Nullable results, NSError * _Nullable error) {
-                                              
-                                              _isGeocoding = NO;
-                                              if (handler) {
-                                                  handler(results, error);
-                                              }
-                                          }];
+                  
+                    _isGeocoding = NO;
+
+                    handler(results, error);
+                }];
                 break;
             }
             case kLMGeocoderAppleService:
@@ -114,13 +115,13 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                                            
                                            if (!error && placemarks.count) {
                                                // Request successful --> Parse response results
-                                               [self parseGeocodingResponseResults:placemarks service:kLMGeocoderAppleService];
+                                               NSArray * results = [self parseGeocodingResponseResults: placemarks
+                                                                                               service: kLMGeocoderAppleService];
+                                               handler(results, nil);
                                            }
                                            else {
                                                // Request failed --> Return error
-                                               if (handler) {
-                                                   handler(nil, error);
-                                               }
+                                               handler(nil, error);
                                            }
                                        }];
                 break;
@@ -129,6 +130,32 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                 break;
         }
     }
+}
+
+- (nullable NSArray *)geocodeAtGoogleAddressString:(NSString *)addressString
+                                             error:(NSError **)error {
+    
+    if (addressString == nil
+        || addressString.length == 0) {
+        // Invalid address string --> Return
+        *error = [NSError errorWithDomain:kLMGeocoderErrorDomain
+                                     code:kLMGeocoderErrorInvalidAddressString
+                                 userInfo:nil];
+        return nil;
+    }
+    
+    _isGeocoding = YES;
+    
+    // Valid address string --> Geocode using Google service
+    NSString *urlString = kGoogleAPIGeocodingURL(addressString);
+    if (self.googleAPIKey != nil) {
+        urlString = kGoogleAPIURLWithKey(urlString, self.googleAPIKey)
+    }
+    NSArray *finalResults = [self buildSynchronousRequestFromURLString:urlString];
+    
+    _isGeocoding = NO;
+    
+    return finalResults;
 }
 
 - (nullable NSArray *)geocodeAddressString:(nonnull NSString *)addressString
@@ -144,15 +171,60 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                                  userInfo:nil];
         return nil;
     }
-    else
+    
+    switch (service)
     {
-        // Valid address string --> Geocode using Google service
-        NSString *urlString = kGoogleAPIGeocodingURL(addressString);
-        if (self.googleAPIKey != nil) {
-            urlString = kGoogleAPIURLWithKey(urlString, self.googleAPIKey)
-        }
-        NSArray *finalResults = [self buildSynchronousRequestFromURLString:urlString];
-        return finalResults;
+        case kLMGeocoderGoogleService: {
+                _isGeocoding = YES;
+            
+                // Valid address string --> Geocode using Google service
+                NSString *urlString = kGoogleAPIGeocodingURL(addressString);
+                if (self.googleAPIKey != nil) {
+                    urlString = kGoogleAPIURLWithKey(urlString, self.googleAPIKey)
+                }
+                NSArray *finalResults = [self buildSynchronousRequestFromURLString:urlString];
+            
+                _isGeocoding = NO;
+            
+                return finalResults;
+            
+        } break;
+            
+        case kLMGeocoderAppleService: {
+            
+            _isGeocoding = YES;
+            
+            __block NSArray * results = nil;
+            __block NSError * blockError = nil;
+            
+//            dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+//            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [self.appleGeocoder geocodeAddressString: addressString
+                                       completionHandler: ^(NSArray *placemarks, NSError *appleError) {
+                                           
+                       _isGeocoding = NO;
+                       
+                       blockError = appleError;
+                       NSLog(@"%@", appleError);
+                       NSLog(@"placemarks %@", placemarks);
+                       if (!appleError && placemarks.count) {
+                           // Request successful --> Parse response results
+                           results = [self parseGeocodingResponseResults: placemarks
+                                                                 service: kLMGeocoderAppleService];
+                       }
+                       
+                                           CFRunLoopRun();
+//                       dispatch_semaphore_signal(semaphore);
+                }];
+//            });
+            
+//            dispatch_time_t timeoutTime = dispatch_time(DISPATCH_TIME_NOW, 20 * NSEC_PER_SEC);
+//            dispatch_semaphore_wait(semaphore, timeoutTime);
+            
+            *error = blockError;
+            return results;
+            
+        }    break;
     }
 }
 
@@ -163,6 +235,11 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                          service:(LMGeocoderService)service
                completionHandler:(LMGeocodeCallback)handler
 {
+    
+    if (handler == nil) {
+        return;
+    }
+    
     _isGeocoding = YES;
     
     // Check location coordinate
@@ -174,9 +251,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                                          userInfo:nil];
         
         _isGeocoding = NO;
-        if (handler) {
-            handler(nil, error);
-        }
+        handler(nil, error);
     }
     else
     {
@@ -194,9 +269,9 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                                           completionHandler:^(NSArray<LMAddress *> * _Nullable results, NSError * _Nullable error) {
                                               
                                               _isGeocoding = NO;
-                                              if (handler) {
-                                                  handler(results, error);
-                                              }
+                                              
+                                               handler(results, error);
+                                              
                                           }];
                 break;
             }
@@ -212,13 +287,13 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                                              
                                              if (!error && placemarks.count) {
                                                  // Request successful --> Parse response results
-                                                 [self parseGeocodingResponseResults:placemarks service:kLMGeocoderAppleService];
+                                                 NSArray * results = [self parseGeocodingResponseResults: placemarks
+                                                                                                 service: kLMGeocoderAppleService];
+                                                 handler(results, nil);
                                              }
                                              else {
                                                  // Request failed --> Return error
-                                                 if (handler) {
-                                                     handler(nil, error);
-                                                 }
+                                                 handler(nil, error);
                                              }
                                          }];
                 break;

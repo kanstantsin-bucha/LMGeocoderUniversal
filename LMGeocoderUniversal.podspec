@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LMGeocoderUniversal'
-  s.version          = '1.1.1'
+  s.version          = '1.2.0'
   s.summary          = 'Second Life of LMGeocoder by LMinh.'
 
 # This description is used to generate tags and improve search results.
@@ -28,10 +28,10 @@ Simple wrapper for geocoding and reverse geocoding, using both Google Geocoding 
   s.source           = { :git => 'https://github.com/truebucha/LMGeocoderUniversal.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/truebucha'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.osx.deployment_target = '10.10'
 
   s.source_files = 'LMGeocoderUniversal/Classes/**/*'
-  s.frameworks = 'Foundation'
+  s.frameworks = 'Foundation','CoreLocation'
   s.requires_arc = true
 end

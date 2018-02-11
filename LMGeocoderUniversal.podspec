@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LMGeocoderUniversal'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'Second Life of LMGeocoder by LMinh.'
 
 # This description is used to generate tags and improve search results.

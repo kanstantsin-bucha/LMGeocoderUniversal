@@ -17,6 +17,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
 
 @interface LMGeocoder ()
 
+@property (nonatomic, readwrite, assign) BOOL isGeocoding;
 @property (nonatomic, strong) CLGeocoder *appleGeocoder;
 @property (nonatomic, strong) NSURLSessionDataTask *googleGeocoderTask;
 
@@ -32,7 +33,6 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
 
 @implementation LMGeocoder
 
-@synthesize isGeocoding = _isGeocoding;
 
 #pragma mark - INIT
 
@@ -71,7 +71,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
         return;
     }
     
-    _isGeocoding = YES;
+    self.isGeocoding = YES;
     
     // Check address string
     if (addressString == nil || addressString.length == 0)
@@ -81,7 +81,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                                              code:kLMGeocoderErrorInvalidAddressString
                                          userInfo:nil];
         
-        _isGeocoding = NO;
+        self.isGeocoding = NO;
         handler(nil, error);
     }
     else
@@ -99,7 +99,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                 [self buildAsynchronousRequestFromURLString:urlString
                                           completionHandler:^(NSArray<LMAddress *> * _Nullable results, NSError * _Nullable error) {
                   
-                    _isGeocoding = NO;
+                    self.isGeocoding = NO;
 
                     handler(results, error);
                 }];
@@ -111,7 +111,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                 [self.appleGeocoder geocodeAddressString:addressString
                                        completionHandler:^(NSArray *placemarks, NSError *error) {
                                            
-                                           _isGeocoding = NO;
+                                           self.isGeocoding = NO;
                                            
                                            if (!error && placemarks.count) {
                                                // Request successful --> Parse response results
@@ -144,7 +144,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
         return nil;
     }
     
-    _isGeocoding = YES;
+    self.isGeocoding = YES;
     
     // Valid address string --> Geocode using Google service
     NSString *urlString = kGoogleAPIGeocodingURL(addressString);
@@ -153,7 +153,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
     }
     NSArray *finalResults = [self buildSynchronousRequestFromURLString:urlString];
     
-    _isGeocoding = NO;
+    self.isGeocoding = NO;
     
     return finalResults;
 }
@@ -175,7 +175,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
     switch (service)
     {
         case kLMGeocoderGoogleService: {
-                _isGeocoding = YES;
+                self.isGeocoding = YES;
             
                 // Valid address string --> Geocode using Google service
                 NSString *urlString = kGoogleAPIGeocodingURL(addressString);
@@ -184,7 +184,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                 }
                 NSArray *finalResults = [self buildSynchronousRequestFromURLString:urlString];
             
-                _isGeocoding = NO;
+                self.isGeocoding = NO;
             
                 return finalResults;
             
@@ -192,7 +192,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
             
         case kLMGeocoderAppleService: {
             
-            _isGeocoding = YES;
+            self.isGeocoding = YES;
             
             __block NSArray * results = nil;
             __block NSError * blockError = nil;
@@ -202,7 +202,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                 [self.appleGeocoder geocodeAddressString: addressString
                                        completionHandler: ^(NSArray *placemarks, NSError *appleError) {
                                            
-                       _isGeocoding = NO;
+                       self.isGeocoding = NO;
                        
                        blockError = appleError;
                        NSLog(@"%@", appleError);
@@ -240,7 +240,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
         return;
     }
     
-    _isGeocoding = YES;
+    self.isGeocoding = YES;
     
     // Check location coordinate
     if (!CLLocationCoordinate2DIsValid(coordinate))
@@ -250,7 +250,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                                              code:kLMGeocoderErrorInvalidCoordinate
                                          userInfo:nil];
         
-        _isGeocoding = NO;
+        self.isGeocoding = NO;
         handler(nil, error);
     }
     else
@@ -268,7 +268,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                 [self buildAsynchronousRequestFromURLString:urlString
                                           completionHandler:^(NSArray<LMAddress *> * _Nullable results, NSError * _Nullable error) {
                                               
-                                              _isGeocoding = NO;
+                                              self.isGeocoding = NO;
                                               
                                                handler(results, error);
                                               
@@ -283,7 +283,7 @@ static NSString * const kLMGeocoderErrorDomain = @"LMGeocoderError";
                 [self.appleGeocoder reverseGeocodeLocation:location
                                          completionHandler:^(NSArray *placemarks, NSError *error) {
                                              
-                                             _isGeocoding = NO;
+                                             self.isGeocoding = NO;
                                              
                                              if (!error && placemarks.count) {
                                                  // Request successful --> Parse response results

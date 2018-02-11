@@ -6,7 +6,7 @@ PODS:
   - CDBKit/Core (1.4.1)
   - CDBKit/Localize (1.4.1)
   - CDBKit/UI (1.4.1)
-  - LMGeocoderUniversal (1.2.0)
+  - LMGeocoderUniversal (1.2.1)
 
 DEPENDENCIES:
   - CDBKit (~> 1.4)
@@ -18,8 +18,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CDBKit: b0120d59f2f29eb465133aeb76b82f8653e57b0e
-  LMGeocoderUniversal: dd01ed4b14ee9f38ed5f47caff98f4de3fd3c79a
+  LMGeocoderUniversal: d651d726f44b13c330baecf08bfa06143aace360
 
 PODFILE CHECKSUM: f1a57b7c140650867dd7b988abc3e7e00cefcddb
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

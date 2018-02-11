@@ -1,6 +1,6 @@
 {
   "name": "LMGeocoderUniversal",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "summary": "Second Life of LMGeocoder by LMinh.",
   "description": "Simple wrapper for geocoding and reverse geocoding, using both Google Geocoding API and Apple iOS Geocoding Framework.",
   "homepage": "https://github.com/truebucha/LMGeocoderUniversal",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/truebucha/LMGeocoderUniversal.git",
-    "tag": "1.2.0"
+    "tag": "1.2.1"
   },
   "social_media_url": "https://twitter.com/truebucha",
   "platforms": {

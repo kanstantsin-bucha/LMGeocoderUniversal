@@ -1,3 +1,5 @@
+It was archived. Please write to me at kanstantsin.bucha@icloud.com in case any issues occur.
+
 # LMGeocoderUniversal
 
 [![CI Status](http://img.shields.io/travis/truebucha/LMGeocoderUniversal.svg?style=flat)](https://travis-ci.org/truebucha/LMGeocoderUniversal)
